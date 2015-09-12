@@ -406,7 +406,7 @@ function writeTxt($size, $rotate, $x, $y, $color, $txt) {
 
 
   // Send Image to Browser
-  imagejpeg($jpg_image, 'test10_img.jpg');
+  imagejpeg($jpg_image, 'texture.jpg');
   //echo $shape;
 
   // Clear Memory
