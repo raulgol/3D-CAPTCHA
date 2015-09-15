@@ -8,9 +8,11 @@ public class addText : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// as long as this 3D model is created, retrive its texture which already has CAPTCHA written on it
 		StartCoroutine(retrieveImage());
 	}
 
+	// retrieve texture from server
 	IEnumerator retrieveImage() {
 		WWW postRequest = new WWW(image_url);
 		yield return postRequest;
@@ -18,6 +20,7 @@ public class addText : MonoBehaviour {
 		StartCoroutine(deleteImage());
 	}
 
+	// after replacing the texture, delete it from server to prevent hackers from visiting it directly
 	IEnumerator deleteImage() {
 		WWW postRequest = new WWW(deleteImage_url);
 		yield return postRequest;

@@ -26,8 +26,7 @@ public class CameraScript : MonoBehaviour {
 	
 	private Quaternion rotation = Quaternion.Euler(new Vector3(30f,0f,0f));
 	private Vector3 CameraTarget;
-	void Start () 
-	{
+	void Start () {
 		
 		CameraTarget = target.position;
 		
@@ -41,11 +40,9 @@ public class CameraScript : MonoBehaviour {
 		y = angles.x;
 	}
 	
-	void Update ()
-	{
+	void Update () {
 		
-		if(Input.GetMouseButton(0))
-		{
+		if(Input.GetMouseButton(0)) {
 			x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
 			y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 			
@@ -57,32 +54,26 @@ public class CameraScript : MonoBehaviour {
 			transform.rotation = rotation;
 			transform.position = position;
 			
-		}else if (Input.GetAxis("Mouse ScrollWheel") != 0)
-		{
+		} else if (Input.GetAxis("Mouse ScrollWheel") != 0) {
 			normalized = (transform.position - CameraTarget).normalized;
 			
-			if (normalDistance >= MouseZoomMin && normalDistance <= MouseZoomMax)
-			{
+			if (normalDistance >= MouseZoomMin && normalDistance <= MouseZoomMax) {
 				normalDistance -= Input.GetAxis("Mouse ScrollWheel") * MouseWheelSensitivity;
 			}
-			if (normalDistance < MouseZoomMin)
-			{
+			if (normalDistance < MouseZoomMin) {
 				normalDistance = MouseZoomMin;
 			}
-			if (normalDistance > MouseZoomMax)
-			{
+			if (normalDistance > MouseZoomMax) {
 				normalDistance = MouseZoomMax;
 			}
 			transform.position =	   normalized * normalDistance;
 			
-		}else if(Input.GetMouseButtonDown(2))
-		{
+		} else if(Input.GetMouseButtonDown(2)) {
 			screenPoint = Camera.main.WorldToScreenPoint(target.transform.position);
 			offset = target.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
 		}
 		
-		if(Input.GetMouseButton(2))
-		{
+		if(Input.GetMouseButton(2)) {
 			Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 			
 			Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
@@ -92,8 +83,7 @@ public class CameraScript : MonoBehaviour {
 		
 	}
 	
-	static float ClampAngle (float angle , float min ,float  max) 
-	{
+	static float ClampAngle (float angle , float min ,float  max) {
 		if (angle < -360)
 			angle += 360;
 		if (angle > 360)
