@@ -4,7 +4,7 @@
 ## Demo
 Web Unity will be needed to run the demo.
 Chorome does not support unity now. Other browsers work fine with this demo.<br />
-http://www.duoduoyu.org/3d_captcha/3d_captcha.html
+<a href="http://www.duoduoyu.org/3d_captcha/3d_captcha.html" target="_blank">http://www.duoduoyu.org/3d_captcha/3d_captcha.html</a>
 ## Introduction
 This is a brand new idea of CAPTCHA to improve cyber security.
 CAPTCHAs are added to surfaces of 3D models. And the 3D models can be rotated.
