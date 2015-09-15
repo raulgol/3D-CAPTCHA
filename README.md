@@ -33,6 +33,9 @@ In the backend, .php files are responsible for generating CAPTCHA texture mappin
 Because the CAPTCHAs themselves will not be sent directly from server to fron-end, so it's hard for hackers to intercept the CAPTCHA information.
 The 3D object models, background noise of textures and CAPTCHAs are all random, all of these will increase the difficulty for robots to crack.
 ## Future Work
+Automate the procedure of setting an appropriate initial view of 3D models to hide the CAPTCHA<br />
+Automate the procedure of adding text on random positions of a texture<br />
+Automate the procedure of setting appropriate text color of CAPTCHAs on noise background images<br />
 Add more 3D models.<br />
 Add more complex animations to 3D models.<br />
 Create more effective background noise.<br />
