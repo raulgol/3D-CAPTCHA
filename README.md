@@ -1,6 +1,8 @@
 <snippet>
   <content>
 # 3D CAPTCHA
+## Demo
+http://www.duoduoyu.org/3d_captcha/3d_captcha.html
 ## Introduction
 This is a brand new idea of CAPTCHA to improve cyber security.
 CAPTCHAs are added to surfaces of 3D models. And the 3D models can be rotated.
