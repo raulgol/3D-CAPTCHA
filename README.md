@@ -2,6 +2,8 @@
   <content>
 # 3D CAPTCHA
 ## Demo
+Web Unity will be needed to run the demo.
+Chorome does not support unity now. Other browsers work fine with this demo.
 http://www.duoduoyu.org/3d_captcha/3d_captcha.html
 ## Introduction
 This is a brand new idea of CAPTCHA to improve cyber security.
@@ -34,6 +36,8 @@ Add more 3D models.
 Add more complex animations to 3D models.
 
 Create more effective background noise.
+
+Build the project as WebGL version to make it easier to use.
 
 ></content>
   <tabTrigger></tabTrigger>
