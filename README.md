@@ -4,6 +4,7 @@
 ## Demo
 Web Unity will be needed to run the demo.
 Chorome does not support unity now. Other browsers work fine with this demo.
+
 http://www.duoduoyu.org/3d_captcha/3d_captcha.html
 ## Introduction
 This is a brand new idea of CAPTCHA to improve cyber security.
@@ -32,11 +33,8 @@ Because the CAPTCHAs themselves will not be sent directly from server to fron-en
 The 3D object models, background noise of textures and CAPTCHAs are all random, all of these will increase the difficulty for robots to crack.
 ## Future Work
 Add more 3D models.
-
 Add more complex animations to 3D models.
-
 Create more effective background noise.
-
 Build the project as WebGL version to make it easier to use.
 
 ></content>
